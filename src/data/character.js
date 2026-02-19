@@ -3,13 +3,13 @@
 
 export const character = {
   name: 'The Apprentice',      // Your name or alias
-  title: 'Software Artisan',   // Current professional title
-  class: 'Full-Stack Knight',  // Your chosen class
+  title: 'Software Engineer',  // Current professional title
+  class: 'Full-Stack Pilot',   // Your chosen class
   startDate: '2025-01-01',     // When the journey began
 
-  bio: `A brave soul venturing into the ancient arts of software engineering,
-seeking the wisdom of the Elders and the sacred rank of Senior Knight.
-The path is long, the scrolls are many — but the forge never sleeps.`,
+  bio: `Sync rate: rising. A pilot in training navigating the systems of modern software engineering —
+architecture, leadership, full-stack development. The mission: achieve Senior rank.
+The path is long. The terminal never sleeps.`,
 
   // ─── LEVELING ──────────────────────────────────────────────
   // Each completed skill grants XP. Level up automatically.

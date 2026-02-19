@@ -6,6 +6,7 @@
   line-height: 1.7;
   max-width: 680px;
   margin-bottom: 2rem;
+  font-family: var(--font-body);
 }
 
 .grid {
@@ -19,26 +20,29 @@
   position: relative;
   overflow: hidden;
   animation: fadeUp 0.4s ease both;
+  background: var(--bg-card);
+  border: 1px solid rgba(236,119,68,0.15);
+  border-radius: 0;
 }
 
 .card.highlight {
-  border-color: var(--gold-dark);
-  box-shadow: 0 0 24px rgba(212,168,67,0.1);
+  border-color: rgba(236,119,68,0.35);
+  box-shadow: 0 0 24px rgba(236,119,68,0.08);
 }
 
 .highlightBadge {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--gold);
-  background: rgba(212,168,67,0.1);
-  border: 1px solid var(--gold-dim);
-  padding: 0.2rem 0.6rem;
-  border-radius: 2px;
+  background: rgba(236,119,68,0.1);
+  border: 1px solid rgba(236,119,68,0.3);
+  padding: 0.15rem 0.55rem;
+  border-radius: 0;
 }
 
 .cardTop {
@@ -54,8 +58,8 @@
 }
 
 .subtitle {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-dim);
@@ -65,14 +69,17 @@
 .title {
   font-family: var(--font-heading);
   font-size: 1.3rem;
+  font-weight: 700;
   color: var(--text-bright);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .description {
   font-size: 0.9rem;
   color: var(--text-dim);
   line-height: 1.65;
+  font-family: var(--font-body);
 }
 
 .techList {
@@ -83,21 +90,21 @@
 }
 
 .techTag {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 0.2rem 0.5rem;
+  padding: 0.18rem 0.5rem;
   background: var(--bg-raised);
-  border: 1px solid var(--gold-dim);
-  border-radius: 2px;
+  border: 1px solid rgba(236,119,68,0.18);
+  border-radius: 0;
   color: var(--text-dim);
 }
 
 .sectionLabel {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-dim);
   margin-bottom: 0.4rem;
@@ -114,9 +121,9 @@
 
 .bulletList li {
   font-size: 0.85rem;
-  font-style: italic;
   margin-bottom: 0.2rem;
   line-height: 1.5;
+  font-family: var(--font-body);
 }
 
 .links {
@@ -130,12 +137,12 @@
 .empty {
   padding: 4rem 2rem;
   text-align: center;
-  border: 1px solid var(--gold-dim);
-  border-radius: 4px;
+  border: 1px solid rgba(236,119,68,0.15);
+  border-radius: 0;
   background: var(--bg-card);
 }
 
-.emptyIcon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.4; }
-.emptyTitle { font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-mid); margin-bottom: 0.5rem; }
-.emptyMsg { font-size: 0.85rem; color: var(--text-dim); font-style: italic; }
-.emptyMsg code { font-family: 'Courier New', monospace; font-size: 0.85em; color: var(--gold); font-style: normal; }
+.emptyIcon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.3; }
+.emptyTitle { font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-mid); margin-bottom: 0.5rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.emptyMsg { font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-dim); }
+.emptyMsg code { font-family: var(--font-mono); font-size: 0.85em; color: var(--gold); }

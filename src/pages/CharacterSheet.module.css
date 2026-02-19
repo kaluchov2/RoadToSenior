@@ -3,8 +3,9 @@
 .intro {
   font-size: 0.88rem;
   color: var(--text-dim);
-  font-style: italic;
   margin-bottom: 2rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
 }
 
 .layout {
@@ -34,8 +35,8 @@
 .sideSection {
   padding: 1.25rem;
   background: var(--bg-card);
-  border: 1px solid var(--gold-dim);
-  border-radius: 3px;
+  border: 1px solid rgba(236,119,68,0.18);
+  border-radius: 0;
 }
 
 .contactList {
@@ -45,15 +46,16 @@
 }
 
 .contactLink {
-  font-family: var(--font-heading);
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
   color: var(--text-dim);
   text-decoration: none;
   transition: color 0.15s ease;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  text-transform: uppercase;
 }
 
 .contactLink:hover {
@@ -74,6 +76,7 @@
   font-size: 0.95rem;
   color: var(--text-dim);
   line-height: 1.75;
+  font-family: var(--font-body);
 }
 
 /* ── Domain list ── */
@@ -86,8 +89,8 @@
 .domainRow {
   padding: 1rem;
   background: var(--bg-card);
-  border: 1px solid var(--gold-dim);
-  border-radius: 3px;
+  border: 1px solid rgba(236,119,68,0.15);
+  border-radius: 0;
 }
 
 .domainHeader {
@@ -111,29 +114,31 @@
   display: block;
   font-family: var(--font-heading);
   font-size: 0.85rem;
+  font-weight: 700;
   color: var(--text-bright);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .domainSub {
   display: block;
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.12em;
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--text-dim);
   margin-top: 0.1rem;
 }
 
 .domainPct {
-  font-family: var(--font-display);
+  font-family: var(--font-mono);
   font-size: 1rem;
   color: var(--gold);
 }
 
 .domainSkillCount {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
   color: var(--text-ghost);
   margin-top: 0.3rem;
   letter-spacing: 0.06em;
@@ -152,30 +157,34 @@
   gap: 0.4rem;
   padding: 0.4rem 0.7rem;
   background: var(--bg-card);
-  border: 1px solid var(--gold-dim);
-  border-radius: 2px;
+  border: 1px solid rgba(236,119,68,0.15);
+  border-radius: 0;
 }
 
 .skillChipCheck {
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   color: var(--gold);
   flex-shrink: 0;
+  font-family: var(--font-mono);
 }
 
 .skillChipName {
   font-family: var(--font-heading);
-  font-size: 0.7rem;
+  font-size: 0.68rem;
+  font-weight: 600;
   color: var(--text-light);
   flex: 1;
   min-width: 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .skillChipCat {
-  font-family: var(--font-heading);
-  font-size: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
   color: var(--text-ghost);
   flex-shrink: 0;
   display: none;
@@ -191,8 +200,8 @@
 .projectItem {
   padding: 1.25rem;
   background: var(--bg-card);
-  border: 1px solid var(--gold-dim);
-  border-radius: 3px;
+  border: 1px solid rgba(236,119,68,0.15);
+  border-radius: 0;
 }
 
 .projectHeader {
@@ -207,16 +216,18 @@
 .projectName {
   font-family: var(--font-heading);
   font-size: 0.95rem;
+  font-weight: 700;
   color: var(--text-bright);
-  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .projectStatus {
-  font-family: var(--font-heading);
-  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
   color: var(--text-dim);
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
 }
 
 .projectTech {
@@ -226,14 +237,14 @@
 }
 
 .techTag {
-  font-family: var(--font-heading);
-  font-size: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.53rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  padding: 0.15rem 0.4rem;
+  padding: 0.12rem 0.4rem;
   background: var(--bg-raised);
-  border: 1px solid var(--gold-dim);
-  border-radius: 2px;
+  border: 1px solid rgba(236,119,68,0.15);
+  border-radius: 0;
   color: var(--text-dim);
 }
 
@@ -242,6 +253,7 @@
   color: var(--text-dim);
   line-height: 1.6;
   margin-bottom: 0.75rem;
+  font-family: var(--font-body);
 }
 
 .projectLinks {

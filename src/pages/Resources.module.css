@@ -6,6 +6,7 @@
   line-height: 1.7;
   max-width: 680px;
   margin-bottom: 1.5rem;
+  font-family: var(--font-body);
 }
 
 /* ── Filters ── */
@@ -24,9 +25,9 @@
 }
 
 .filterLabel {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
-  letter-spacing: 0.15em;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-dim);
   width: 40px;
@@ -34,26 +35,26 @@
 }
 
 .filterBtn {
-  font-family: var(--font-heading);
-  font-size: 0.62rem;
-  letter-spacing: 0.1em;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  padding: 0.25rem 0.65rem;
+  padding: 0.22rem 0.65rem;
   background: transparent;
-  border: 1px solid var(--gold-dim);
+  border: 1px solid rgba(236,119,68,0.2);
   color: var(--text-dim);
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 0;
   transition: all 0.15s ease;
 }
 
 .filterBtn:hover {
-  border-color: var(--gold-dark);
-  color: var(--parchment);
+  border-color: rgba(236,119,68,0.4);
+  color: var(--text-light);
 }
 
 .filterBtn.filterActive {
-  background: rgba(212,168,67,0.1);
+  background: rgba(236,119,68,0.1);
   border-color: var(--gold);
   color: var(--gold);
 }
@@ -76,10 +77,13 @@
   flex-direction: column;
   gap: 0.75rem;
   transition: all 0.2s ease;
+  background: var(--bg-card);
+  border: 1px solid rgba(236,119,68,0.15);
+  border-radius: 0;
 }
 
 .card:hover {
-  border-color: var(--gold-dark);
+  border-color: rgba(236,119,68,0.35);
   transform: translateY(-1px);
 }
 
@@ -93,8 +97,8 @@
 }
 
 .date {
-  font-family: var(--font-heading);
-  font-size: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.53rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--text-ghost);
@@ -109,33 +113,37 @@
 
 .author {
   font-family: var(--font-heading);
-  font-size: 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 600;
   color: var(--text-bright);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .handle {
-  font-family: var(--font-heading);
-  font-size: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
   color: var(--text-dim);
 }
 
 .resourceTitle {
   font-family: var(--font-heading);
   font-size: 0.85rem;
-  color: var(--parchment);
   font-weight: 600;
+  color: var(--parchment-light);
   margin-top: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .content {
   font-size: 0.88rem;
   color: var(--text-dim);
   line-height: 1.7;
-  font-style: italic;
-  border-left: 2px solid var(--gold-dim);
+  border-left: 2px solid rgba(236,119,68,0.25);
   padding-left: 0.75rem;
   flex: 1;
+  font-family: var(--font-body);
 }
 
 .footer {
@@ -152,26 +160,26 @@
 }
 
 .tag {
-  font-family: var(--font-heading);
-  font-size: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.52rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text-ghost);
   padding: 0.1rem 0.4rem;
   border: 1px solid var(--text-ghost);
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 /* ── Empty state ── */
 .empty {
   padding: 4rem 2rem;
   text-align: center;
-  border: 1px solid var(--gold-dim);
-  border-radius: 4px;
+  border: 1px solid rgba(236,119,68,0.15);
+  border-radius: 0;
   background: var(--bg-card);
 }
 
-.emptyIcon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.4; }
-.emptyTitle { font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-mid); margin-bottom: 0.5rem; }
-.emptyMsg { font-size: 0.85rem; color: var(--text-dim); font-style: italic; }
-.emptyMsg code { font-family: 'Courier New', monospace; font-size: 0.85em; color: var(--gold); font-style: normal; }
+.emptyIcon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.3; }
+.emptyTitle { font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-mid); margin-bottom: 0.5rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.emptyMsg { font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-dim); }
+.emptyMsg code { font-family: var(--font-mono); font-size: 0.85em; color: var(--gold); }

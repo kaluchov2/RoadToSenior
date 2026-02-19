@@ -3,13 +3,12 @@
 }
 
 .headerSub {
-  font-family: var(--font-heading);
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--text-dim);
   margin-top: 0.5rem;
-  font-style: normal;
 }
 
 .overviewGrid {
