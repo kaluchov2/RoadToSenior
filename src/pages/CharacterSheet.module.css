@@ -1,0 +1,250 @@
+.page { animation: fadeIn 0.4s ease; }
+
+.intro {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-bottom: 2rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .layout { grid-template-columns: 1fr; }
+}
+
+/* ── Sidebar ── */
+.sidebar {
+  position: sticky;
+  top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .sidebar { position: static; }
+}
+
+.sideSection {
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-dim);
+  border-radius: 3px;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contactLink {
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.contactLink:hover {
+  color: var(--gold);
+}
+
+/* ── Main content ── */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {}
+
+/* ── Bio ── */
+.bio {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  line-height: 1.75;
+}
+
+/* ── Domain list ── */
+.domainList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.domainRow {
+  padding: 1rem;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-dim);
+  border-radius: 3px;
+}
+
+.domainHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+
+.domainIcon {
+  font-size: 1.2rem;
+  width: 28px;
+  text-align: center;
+}
+
+.domainInfo {
+  flex: 1;
+}
+
+.domainName {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  color: var(--text-bright);
+  letter-spacing: 0.05em;
+}
+
+.domainSub {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-top: 0.1rem;
+}
+
+.domainPct {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--gold);
+}
+
+.domainSkillCount {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  color: var(--text-ghost);
+  margin-top: 0.3rem;
+  letter-spacing: 0.06em;
+}
+
+/* ── Skill grid (completed skills) ── */
+.skillGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.4rem;
+}
+
+.skillChip {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.7rem;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-dim);
+  border-radius: 2px;
+}
+
+.skillChipCheck {
+  font-size: 0.7rem;
+  color: var(--gold);
+  flex-shrink: 0;
+}
+
+.skillChipName {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  color: var(--text-light);
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.skillChipCat {
+  font-family: var(--font-heading);
+  font-size: 0.55rem;
+  color: var(--text-ghost);
+  flex-shrink: 0;
+  display: none;
+}
+
+/* ── Projects ── */
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projectItem {
+  padding: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-dim);
+  border-radius: 3px;
+}
+
+.projectHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.projectName {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  color: var(--text-bright);
+  font-weight: 600;
+}
+
+.projectStatus {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.projectTech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.techTag {
+  font-family: var(--font-heading);
+  font-size: 0.55rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.4rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--gold-dim);
+  border-radius: 2px;
+  color: var(--text-dim);
+}
+
+.projectDesc {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 0.4rem;
+}

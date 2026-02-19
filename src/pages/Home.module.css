@@ -1,0 +1,272 @@
+.page {
+  animation: fadeIn 0.4s ease;
+}
+
+/* ── Hero ── */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 3rem;
+  align-items: start;
+  margin-bottom: 2.5rem;
+  padding-top: 0.5rem;
+}
+
+@media (max-width: 1100px) {
+  .hero { grid-template-columns: 1fr; }
+  .heroCard { order: -1; }
+}
+
+.heroText {
+  animation: fadeUp 0.5s ease both;
+}
+
+.heroPretitle {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.75rem;
+  font-style: normal;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  color: var(--text-bright);
+}
+
+.heroSubtitle {
+  font-size: 1.05rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 2rem;
+}
+
+/* ── Hero stats ── */
+.heroStats {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 2rem;
+  padding: 1rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-dim);
+  border-radius: 3px;
+  width: fit-content;
+}
+
+.heroStat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+}
+
+.heroStatNum {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  color: var(--gold-bright);
+  line-height: 1;
+  margin-bottom: 0.2rem;
+}
+
+.heroStatLabel {
+  font-family: var(--font-heading);
+  font-size: 0.55rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.heroStatDivider {
+  width: 1px;
+  height: 36px;
+  background: linear-gradient(to bottom, transparent, var(--gold-dim), transparent);
+}
+
+/* ── CTA buttons ── */
+.heroCta {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* ── Overall progress ── */
+.overallProgress {
+  margin-bottom: 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-dim);
+  border-radius: 3px;
+  animation: fadeUp 0.5s 0.1s ease both;
+}
+
+.overallLabels {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.6rem;
+}
+
+.overallLabel {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.overallPct {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+.overallSub {
+  margin-top: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  color: var(--text-ghost);
+  letter-spacing: 0.05em;
+}
+
+/* ── Section ── */
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.sectionHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Branch grid ── */
+.branchGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .branchGrid { grid-template-columns: 1fr; }
+}
+
+/* ── Post list ── */
+.postList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.postCard {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-dim);
+  border-radius: 3px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.postCard:hover {
+  border-color: var(--gold-dark);
+  background: var(--bg-card-hover);
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.postDate {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.postTags {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.postTitle {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--text-bright);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.04em;
+}
+
+.postExcerpt {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.postLink {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-dark);
+  transition: color 0.15s ease;
+}
+
+.postCard:hover .postLink {
+  color: var(--gold);
+}
+
+/* ── Empty state ── */
+.emptyMsg {
+  font-size: 0.85rem;
+  color: var(--text-ghost);
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+/* ── Quote ── */
+.quoteBlock {
+  margin: 2.5rem 0;
+  padding: 2rem 2.5rem;
+  border-left: 3px solid var(--gold-dim);
+  background: var(--bg-card);
+  position: relative;
+}
+
+.quoteGlyph {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  color: var(--gold-dim);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  opacity: 0.5;
+}
+
+.quote {
+  font-size: 1rem;
+  color: var(--text-mid);
+  line-height: 1.8;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.quoteAuthor {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}

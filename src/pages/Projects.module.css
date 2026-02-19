@@ -1,0 +1,141 @@
+.page { animation: fadeIn 0.4s ease; }
+
+.intro {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1.75rem;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.4s ease both;
+}
+
+.card.highlight {
+  border-color: var(--gold-dark);
+  box-shadow: 0 0 24px rgba(212,168,67,0.1);
+}
+
+.highlightBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  background: rgba(212,168,67,0.1);
+  border: 1px solid var(--gold-dim);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+}
+
+.cardTop {
+  margin-bottom: 1rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.subtitle {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.2rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--text-bright);
+  letter-spacing: 0.04em;
+}
+
+.description {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+  line-height: 1.65;
+}
+
+.techList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.techTag {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  background: var(--bg-raised);
+  border: 1px solid var(--gold-dim);
+  border-radius: 2px;
+  color: var(--text-dim);
+}
+
+.sectionLabel {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.4rem;
+}
+
+.highlights, .learnings {
+  margin-bottom: 0.75rem;
+}
+
+.bulletList {
+  padding-left: 1.25rem;
+  color: var(--text-dim);
+}
+
+.bulletList li {
+  font-size: 0.85rem;
+  font-style: italic;
+  margin-bottom: 0.2rem;
+  line-height: 1.5;
+}
+
+.links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+/* ── Empty state ── */
+.empty {
+  padding: 4rem 2rem;
+  text-align: center;
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  background: var(--bg-card);
+}
+
+.emptyIcon { font-size: 3rem; margin-bottom: 1rem; opacity: 0.4; }
+.emptyTitle { font-family: var(--font-heading); font-size: 1.2rem; color: var(--text-mid); margin-bottom: 0.5rem; }
+.emptyMsg { font-size: 0.85rem; color: var(--text-dim); font-style: italic; }
+.emptyMsg code { font-family: 'Courier New', monospace; font-size: 0.85em; color: var(--gold); font-style: normal; }

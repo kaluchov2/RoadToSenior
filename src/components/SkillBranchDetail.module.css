@@ -1,0 +1,279 @@
+/* ── Branch container ── */
+.branch {
+  margin-bottom: 3rem;
+  scroll-margin-top: 2rem;
+}
+
+/* ── Branch header ── */
+.branchHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem 2rem;
+  background: var(--bg-card);
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px 4px 0 0;
+  border-bottom: 2px solid var(--branch-color, var(--gold-dim));
+  position: relative;
+  overflow: hidden;
+}
+
+.branchHeader::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, color-mix(in srgb, var(--branch-color) 6%, transparent) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.branchIconWrap {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  background: var(--bg-raised);
+  border: 1px solid color-mix(in srgb, var(--branch-color) 40%, var(--gold-dim));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 0 16px color-mix(in srgb, var(--branch-color) 30%, transparent);
+}
+
+.branchIcon {
+  font-size: 1.8rem;
+  filter: drop-shadow(0 0 6px var(--branch-color));
+}
+
+.branchTitles {
+  flex: 1;
+  min-width: 0;
+}
+
+.branchSubtitle {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.2rem;
+}
+
+.branchTitle {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  color: var(--text-bright);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.06em;
+}
+
+.branchDesc {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ── Categories ── */
+.categories {
+  border: 1px solid var(--gold-dim);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+  overflow: hidden;
+}
+
+/* ── Category section ── */
+.category {
+  border-bottom: 1px solid var(--gold-dim);
+}
+
+.category:last-child {
+  border-bottom: none;
+}
+
+.categoryHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--bg-raised);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  text-align: left;
+}
+
+.categoryHeader:hover {
+  background: var(--bg-card);
+}
+
+.catIcon {
+  font-size: 1.1rem;
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.catTitles {
+  flex: 1;
+  min-width: 0;
+}
+
+.catTitle {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-bright);
+  letter-spacing: 0.05em;
+  margin-bottom: 0.1rem;
+}
+
+.catDesc {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.catMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.3rem;
+  flex-shrink: 0;
+}
+
+.catProgress {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+}
+
+.catMiniBar {
+  width: 60px;
+  height: 4px;
+  background: var(--bg-surface);
+  border-radius: 2px;
+  overflow: hidden;
+  border: 1px solid rgba(122,88,16,0.3);
+}
+
+.catMiniFill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 0.8s ease;
+}
+
+.catChevron {
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  flex-shrink: 0;
+  width: 12px;
+}
+
+/* ── Skills list ── */
+.skillsList {
+  background: var(--bg-deep);
+  padding: 0.5rem 0;
+}
+
+/* ── Skill item ── */
+.skillItem {
+  border-bottom: 1px solid rgba(122,88,16,0.15);
+  transition: background 0.15s ease;
+}
+
+.skillItem:last-child {
+  border-bottom: none;
+}
+
+.skillItem:hover {
+  background: rgba(212,168,67,0.03);
+}
+
+.skillItem.done {
+  opacity: 0.8;
+}
+
+.skillHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1.5rem 0.75rem 2.5rem;
+  cursor: pointer;
+}
+
+.skillTitle {
+  flex: 1;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  color: var(--text-light);
+  letter-spacing: 0.04em;
+}
+
+.skillItem.done .skillTitle {
+  color: var(--text-dim);
+  text-decoration: line-through;
+  text-decoration-color: var(--text-ghost);
+}
+
+.skillXp {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  color: var(--gold-dim);
+  letter-spacing: 0.08em;
+  flex-shrink: 0;
+}
+
+.expandIcon {
+  font-size: 0.55rem;
+  color: var(--text-ghost);
+  width: 10px;
+  flex-shrink: 0;
+}
+
+/* ── Skill body (expanded) ── */
+.skillBody {
+  padding: 0 1.5rem 1rem 3.75rem;
+  animation: fadeUp 0.2s ease both;
+}
+
+.skillDesc {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+}
+
+.notes {
+  margin-bottom: 0.75rem;
+}
+
+.notesLabel,
+.resourcesLabel {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 0.35rem;
+}
+
+.resources {}
+
+.resourceLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* ── Empty state ── */
+.emptyMsg {
+  padding: 1rem 2.5rem;
+  font-size: 0.8rem;
+  color: var(--text-ghost);
+  font-style: italic;
+}

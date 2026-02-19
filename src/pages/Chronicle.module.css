@@ -1,0 +1,253 @@
+.page {
+  animation: fadeIn 0.4s ease;
+}
+
+.intro {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+  max-width: 680px;
+  margin-bottom: 1.5rem;
+}
+
+/* ── Tag filter ── */
+.tagFilter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.75rem;
+}
+
+.tagBtn {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  background: transparent;
+  border: 1px solid var(--gold-dim);
+  color: var(--text-dim);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.15s ease;
+}
+
+.tagBtn:hover {
+  border-color: var(--gold-dark);
+  color: var(--parchment);
+}
+
+.tagBtn.tagActive {
+  background: rgba(212,168,67,0.1);
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+/* ── Post list ── */
+.postList {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* ── Post card ── */
+.postCard {
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--gold-dim);
+  cursor: pointer;
+  transition: background 0.2s ease;
+  animation: fadeUp 0.4s ease both;
+}
+
+.postCard:last-child {
+  border-bottom: none;
+}
+
+.postCard:hover {
+  background: var(--bg-card-hover);
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.postDate {
+  font-family: var(--font-heading);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.postTags {
+  display: flex;
+  gap: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.postTitle {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: var(--text-bright);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.04em;
+}
+
+.postExcerpt {
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  line-height: 1.65;
+  margin-bottom: 0.75rem;
+}
+
+.readMore {
+  font-family: var(--font-heading);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  transition: color 0.15s ease;
+}
+
+.postCard:hover .readMore {
+  color: var(--gold);
+}
+
+/* ── Full post view ── */
+.postFull {
+  animation: fadeIn 0.3s ease;
+  max-width: 760px;
+}
+
+.backBtn {
+  font-family: var(--font-heading);
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 2rem;
+  transition: color 0.15s ease;
+}
+
+.backBtn:hover {
+  color: var(--gold);
+}
+
+.postHeader {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gold-dim);
+}
+
+.postFullTitle {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  color: var(--text-bright);
+  line-height: 1.2;
+  margin-top: 0.75rem;
+}
+
+.postContent {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.85;
+}
+
+.postContent h2 {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--text-bright);
+  margin: 2rem 0 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--gold-dim);
+  letter-spacing: 0.06em;
+}
+
+.postContent h3 {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  color: var(--parchment);
+  margin: 1.5rem 0 0.5rem;
+}
+
+.postContent p {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.postContent ul, .postContent ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.postContent li {
+  margin-bottom: 0.3rem;
+  font-style: italic;
+}
+
+.postContent strong {
+  color: var(--parchment-light);
+  font-style: normal;
+}
+
+.postContent em {
+  color: var(--gold);
+}
+
+.postContent code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+  background: var(--bg-raised);
+  border: 1px solid var(--gold-dim);
+  padding: 0.1em 0.4em;
+  border-radius: 2px;
+  color: var(--parchment);
+  font-style: normal;
+}
+
+/* ── Empty state ── */
+.empty {
+  padding: 4rem 2rem;
+  text-align: center;
+  border: 1px solid var(--gold-dim);
+  border-radius: 4px;
+  background: var(--bg-card);
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.4;
+}
+
+.emptyTitle {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  color: var(--text-mid);
+  margin-bottom: 0.5rem;
+}
+
+.emptyMsg {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.emptyMsg code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.85em;
+  color: var(--gold);
+  font-style: normal;
+}
